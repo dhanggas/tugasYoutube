@@ -1,3 +1,5 @@
+package tugasyoutube;
+
 import java.util.Scanner;
 
 public class Array2dTemaptDuduk {
