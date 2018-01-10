@@ -15,17 +15,22 @@ import java.util.List;
  */
 public class MainApp {
 
+    ArrayList<Orang> list = new ArrayList<Orang>();
+
     public static void main(String[] args) {
-        ArrayList<Orang> list = new ArrayList<Orang>();
-        list.add(new Orang("1234", "Joni", 20));
-        list.add(new Orang("2015", "Roni", 17));
-        list.add(new Orang("3214", "Joni", 15));
-        for (Orang orang : list) {
-            System.out.println(orang.getKtp()+" "+orang.getNama()+" "+orang.getUmur());
-        }
-      
-        
+        MainApp mp = new MainApp();
+        mp.isiData("123", "oni", 18);
+        mp.lihatData();
+    }
+
+    public void isiData(String ktp, String nama, int umur) {
+        list.add(new Orang(ktp, nama, umur));
 
     }
-    
+    public void lihatData(){
+        for (Orang orang : list) {
+            System.out.println(orang.getKtp()+orang.getNama()+orang.getUmur());
+        }
+    }
+
 }

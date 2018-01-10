@@ -14,6 +14,9 @@ public class Orang {
     private String nama;
     private int umur;
 
+    public Orang() {
+    }
+
     public Orang(String ktp, String nama, int umur) {
         this.ktp = ktp;
         this.nama = nama;

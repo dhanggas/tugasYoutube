@@ -1,6 +1,5 @@
 package tugasyoutube;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Array2dInputTotalLatihan {
